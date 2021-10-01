@@ -1,0 +1,8 @@
+#
+#Thu Sep 30 11:31:44 CEST 2021
+de.christian_steinert.practice_dates.practicedates.dates_service.PracticeDatesService=org.springframework.stereotype.Component
+de.christian_steinert.practice_dates.practicedates.PracticeDatesApplication=org.springframework.stereotype.Component,org.springframework.boot.SpringBootConfiguration
+de.christian_steinert.practice_dates.practicedates.calendars_service.PracticeCalendarsService=org.springframework.stereotype.Component
+de.christian_steinert.practice_dates.practicedates.WebConfig=org.springframework.stereotype.Component
+de.christian_steinert.practice_dates.practicedates.ical_service.IcalService=org.springframework.stereotype.Component
+de.christian_steinert.practice_dates.practicedates.controllers.TibDatesController=org.springframework.stereotype.Component

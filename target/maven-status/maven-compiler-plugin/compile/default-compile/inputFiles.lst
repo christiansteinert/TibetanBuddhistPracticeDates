@@ -1,0 +1,17 @@
+/home/christian/OWN/programmierung/java/TibetanPracticeDates/PracticeDatesWeb/src/main/java/de/christian_steinert/practice_dates/practicedates/WebConfig.java
+/home/christian/OWN/programmierung/java/TibetanPracticeDates/PracticeDatesWeb/src/main/java/de/christian_steinert/practice_dates/practicedates/dates_service/tibetan_calendar_conversion/TibetanDateCalculation.java
+/home/christian/OWN/programmierung/java/TibetanPracticeDates/PracticeDatesWeb/src/main/java/de/christian_steinert/practice_dates/practicedates/dates_service/tibetan_calendar_conversion/TibDate.java
+/home/christian/OWN/programmierung/java/TibetanPracticeDates/PracticeDatesWeb/src/main/java/de/christian_steinert/practice_dates/practicedates/dates_service/tibetan_calendar_conversion/DatePair.java
+/home/christian/OWN/programmierung/java/TibetanPracticeDates/PracticeDatesWeb/src/main/java/de/christian_steinert/practice_dates/practicedates/controllers/DayInfoMapper.java
+/home/christian/OWN/programmierung/java/TibetanPracticeDates/PracticeDatesWeb/src/main/java/de/christian_steinert/practice_dates/practicedates/controllers/PracticeInfoDto.java
+/home/christian/OWN/programmierung/java/TibetanPracticeDates/PracticeDatesWeb/src/main/java/de/christian_steinert/practice_dates/practicedates/calendars_service/CalendarInfo.java
+/home/christian/OWN/programmierung/java/TibetanPracticeDates/PracticeDatesWeb/src/main/java/de/christian_steinert/practice_dates/practicedates/controllers/CalendarInfoDto.java
+/home/christian/OWN/programmierung/java/TibetanPracticeDates/PracticeDatesWeb/src/main/java/de/christian_steinert/practice_dates/practicedates/dates_service/PracticeDatesService.java
+/home/christian/OWN/programmierung/java/TibetanPracticeDates/PracticeDatesWeb/src/main/java/de/christian_steinert/practice_dates/practicedates/controllers/CalendarInfoMapper.java
+/home/christian/OWN/programmierung/java/TibetanPracticeDates/PracticeDatesWeb/src/main/java/de/christian_steinert/practice_dates/practicedates/calendars_service/PracticeCalendarsService.java
+/home/christian/OWN/programmierung/java/TibetanPracticeDates/PracticeDatesWeb/src/main/java/de/christian_steinert/practice_dates/practicedates/controllers/DayInfoDto.java
+/home/christian/OWN/programmierung/java/TibetanPracticeDates/PracticeDatesWeb/src/main/java/de/christian_steinert/practice_dates/practicedates/PracticeDatesApplication.java
+/home/christian/OWN/programmierung/java/TibetanPracticeDates/PracticeDatesWeb/src/main/java/de/christian_steinert/practice_dates/practicedates/dates_service/DayInfo.java
+/home/christian/OWN/programmierung/java/TibetanPracticeDates/PracticeDatesWeb/src/main/java/de/christian_steinert/practice_dates/practicedates/controllers/TibDatesController.java
+/home/christian/OWN/programmierung/java/TibetanPracticeDates/PracticeDatesWeb/src/main/java/de/christian_steinert/practice_dates/practicedates/dates_service/PracticeInfo.java
+/home/christian/OWN/programmierung/java/TibetanPracticeDates/PracticeDatesWeb/src/main/java/de/christian_steinert/practice_dates/practicedates/ical_service/IcalService.java

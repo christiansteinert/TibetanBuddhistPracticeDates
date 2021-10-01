@@ -1,0 +1,12 @@
+[Unit]
+Description=practice dates application
+Requires=network.target
+After=network.target
+
+[Service]
+Restart=on-failure
+ExecStart=/opt/practicedates/practicedates -Xmx50M -Dserver.port=8080
+ExecStop=pkill practicedates
+
+[Install]
+WantedBy=default.target
