@@ -8,7 +8,7 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2021-09-30T11:30:53+0200",
+    date = "2021-10-14T23:35:40+0200",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 11.0.12 (GraalVM Community)"
 )
 public class DayInfoMapperImpl implements DayInfoMapper {

@@ -1,4 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: de.christian_steinert.practice_dates.practicedates.dates_service.PracticeDatesServiceTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.482 s - in de.christian_steinert.practice_dates.practicedates.dates_service.PracticeDatesServiceTest
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.881 s <<< FAILURE! - in de.christian_steinert.practice_dates.practicedates.dates_service.PracticeDatesServiceTest
+checkPracticeData  Time elapsed: 0.029 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: The day 2008-12-14 does not contain the expected practice OTHER ==> expected: <true> but was: <false>
+	at de.christian_steinert.practice_dates.practicedates.dates_service.PracticeDatesServiceTest.checkForExpectedPractices(PracticeDatesServiceTest.java:57)
+	at de.christian_steinert.practice_dates.practicedates.dates_service.PracticeDatesServiceTest.checkPracticeData(PracticeDatesServiceTest.java:119)
+

@@ -6,6 +6,7 @@ import de.christian_steinert.practice_dates.practicedates.dates_service.tibetan_
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.time.Month;
 import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.Date;
@@ -42,7 +43,7 @@ public class PracticeDatesService {
 
             var tibDate = dateCalc.getTibetanDateForGregorianDate(toDateObj(date));
             var nextTibDate = dateCalc.getTibetanDateForGregorianDate(toDateObj(date.plusDays(1)));
-            var practices = getPractices(tibDate, false);
+            var practices = getPractices(date, tibDate, false);
 
             if (nextTibDate.tibDay - tibDate.tibDay == 2) {
                 // the next Tibetan day number will be skipped.
@@ -50,7 +51,7 @@ public class PracticeDatesService {
                 var skippedTibDate = new TibDate(tibDate.rabjung, tibDate.tibYear, tibDate.tibMonth, tibDate.monthFlag, tibDate.tibDay + 1);
                 skippedTibDate.isSkippedDay = true;
                 skippedTibDate.doubleDayFlag = 0;
-                practices.addAll(getPractices(skippedTibDate, true));
+                practices.addAll(getPractices(date, skippedTibDate, true));
             }
 
             var dateInfo = new DayInfo(date, tibDate.tibMonth, tibDate.tibDay,
@@ -63,8 +64,13 @@ public class PracticeDatesService {
         return result;
     }
 
-    private List<PracticeInfo> getPractices(TibDate tibDate, boolean isSkippedDay) {
+    private List<PracticeInfo> getPractices(LocalDate date, TibDate tibDate, boolean isSkippedDay) {
         var result = new ArrayList<PracticeInfo>();
+
+        if(isSkippedDay == false && date.getMonth().equals(Month.JULY) && date.getDayOfMonth() == 6 ) {
+            result.add(new PracticeInfo(PracticeType.OTHER, "Dalai Lama Birthday", "The 6th of July is the birthday of His Holiness the 14th Dalai Lama."));
+        }
+
 
         if (tibDate.doubleDayFlag != 1) {
             // on doubled days practices are usually done on the second day so we skip the first date of a double day.
@@ -97,6 +103,14 @@ public class PracticeDatesService {
                     // 4th of 6th Tibetan month -> Descent from Tushita
                     result.add(new PracticeInfo(PracticeType.BUDDHA_DAY, "Buddha's descent from Tushita", "Celebration of Buddha's descent from the god realm of Tushita (Lhabab Düchen) after the Buddha had taught the Dharma to his mother there. Lhabap Düchen is one of four important Tibetan holidays related to the Buddha."));
                     result.add(new PracticeInfo(PracticeType.PRECEPTS, "Precepts", "Buddha days and eclipses are considered to be particularly powerful days for taking the Eight Mahayana Precepts."));
+                }
+
+                if (tibDate.tibMonth == 10 && tibDate.tibDay == 25) {
+                        result.add(new PracticeInfo(PracticeType.OTHER, "Je Tsongkhapa Day", "Je Tsongkhapa Day (Ganden Ngamchö). On the 25th day of 10th Tibetan lunar month the parinivarna of Je Tsongkhapa is commemorated."));
+                }
+
+                if (tibDate.tibMonth == 5 && tibDate.tibDay == 15) {
+                    result.add(new PracticeInfo(PracticeType.OTHER, "Guru Rinpoche Universal Prayer Day", "Universal Prayer Day (Dzamling Chi Sang, also called 'Universal incense day'). On the 15th day of the 5th Tibetan lunar month the taming of local Tibetan deities by Padmasambhava and the founding of Samye Monastery, the first Buddhist Monastery in Tibet, are celebrated."));
                 }
             }
 

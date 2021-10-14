@@ -116,7 +116,7 @@ class PracticeDatesServiceTest {
         checkForExpectedPractices(2008, 12, 11);
         checkForExpectedPractices(2008, 12, 12, MOON_MB_PRE);
         checkForExpectedPractices(2008, 12, 13);
-        checkForExpectedPractices(2008, 12, 14);
+        checkForExpectedPractices(2008, 12, 14, OTHER);
         checkForExpectedPractices(2008, 12, 15);
         checkForExpectedPractices(2008, 12, 16);
         checkForExpectedPractices(2008, 12, 17);
