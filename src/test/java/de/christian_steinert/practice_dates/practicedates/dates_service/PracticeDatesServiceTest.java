@@ -116,14 +116,14 @@ class PracticeDatesServiceTest {
         checkForExpectedPractices(2008, 12, 11);
         checkForExpectedPractices(2008, 12, 12, MOON_MB_PRE);
         checkForExpectedPractices(2008, 12, 13);
-        checkForExpectedPractices(2008, 12, 14, OTHER);
+        checkForExpectedPractices(2008, 12, 14);
         checkForExpectedPractices(2008, 12, 15);
         checkForExpectedPractices(2008, 12, 16);
         checkForExpectedPractices(2008, 12, 17);
         checkForExpectedPractices(2008, 12, 18);
         checkForExpectedPractices(2008, 12, 19);
         checkForExpectedPractices(2008, 12, 20);
-        checkForExpectedPractices(2008, 12, 21, TSOG);
+        checkForExpectedPractices(2008, 12, 21, TSOG, OTHER); // Tsog and Tsonkhapa day
         checkForExpectedPractices(2008, 12, 22);
         checkForExpectedPractices(2008, 12, 23);
         checkForExpectedPractices(2008, 12, 24);

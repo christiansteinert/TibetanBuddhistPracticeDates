@@ -1,0 +1,3 @@
+[engine:junit-jupiter]/[class:de.christian_steinert.practice_dates.practicedates.dates_service.PracticeDatesServiceTest]/[method:isGetDateRangeInfoEqualToResultOfIndividualDays()]
+[engine:junit-jupiter]/[class:de.christian_steinert.practice_dates.practicedates.dates_service.PracticeDatesServiceTest]/[method:isGetMonthInfoEqualToDateRange()]
+[engine:junit-jupiter]/[class:de.christian_steinert.practice_dates.practicedates.dates_service.PracticeDatesServiceTest]/[method:checkPracticeData()]
